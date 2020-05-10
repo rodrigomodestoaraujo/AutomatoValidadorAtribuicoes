@@ -66,7 +66,7 @@ def main(string):
     return ('Automato validado')
 
 
-print(main('0rodrigo + caio + vinicius + lucas + merecem10;'))
+print(main('merecemos + uma + carta + de + recomentacao + pelo + trabalho + 10;'))
     
 
     
