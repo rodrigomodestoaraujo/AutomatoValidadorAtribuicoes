@@ -18,10 +18,8 @@ def identificador(string):
 def numero(numero): 
     numero = list(numero)
     validade = False
-    
     if (numero.count('.') > 1): 
         return validade
-    
     if (((ord(numero[0]) > 47 and ord(numero[0]) < 58))):
         for i in range(len(numero)):
             for j in range (47, 58):
@@ -32,8 +30,7 @@ def numero(numero):
                     validade = False
                     break
             if (validade == False):
-                break;
-    
+                break;  
     return validade
 
 
