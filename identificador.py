@@ -32,7 +32,7 @@ def numero(numero):
                 break;  
     return validade
 
-def producao(string): 
+def main(string): 
     
     string = string.replace(" ", "")
     
@@ -59,7 +59,7 @@ def producao(string):
     return ('Automato validado')
 
 
-print(producao(' '))
+print(main(' '))
         
 'asdasd + asdasdas ++ asdsadasd;'
 # '0a;' , 'a+++sasa;' ';' , ' '
