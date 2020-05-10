@@ -14,7 +14,6 @@ def identificador(string):
                 break;
     return validade
 
-
 def numero(numero): 
     numero = list(numero)
     validade = False
@@ -33,6 +32,28 @@ def numero(numero):
                 break;  
     return validade
 
+def producao(string): 
+    
+    if (string.count("//") > 0 or string.count("**") > 0 or string.count("++") > 0 or string.count("--") > 0):
+        return False
+    
+    if (string[-1] != ';'):
+        return False
+    
+    string = string.replace(" ", "")
+    string = string.replace("+",",")
+    string = string.replace("-",",")
+    string = string.replace("*",",")
+    string = string.replace("/",",")
+    string = string.split(",")
+    
+    for i in range (len(string)): 
+        if (identificador(string[i]) != True or numero((string[i])) != True):
+            return False
+        
+    return ('Automato validado')
+        
+    
 
     
 
