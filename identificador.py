@@ -66,10 +66,7 @@ def main(string):
     return ('Automato validado')
 
 
-print(main('a+.2;'))
-        
-#'asdasd + asdasdas ++ asdsadasd;'
-# '0a;' , 'a+++sasa;' ';' , ' '
+print(main('0rodrigo + caio + vinicius + lucas + merecem10;'))
     
 
     
