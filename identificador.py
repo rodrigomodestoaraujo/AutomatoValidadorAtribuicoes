@@ -19,6 +19,8 @@ def numero(numero):
     validade = False
     if (numero.count('.') > 1): 
         return validade
+    if (numero[-1] == '.'):
+        return False 
     if (((ord(numero[0]) > 47 and ord(numero[0]) < 58))):
         for i in range(len(numero)):
             for j in range (47, 58):
@@ -38,19 +40,24 @@ def main(string):
     
     if (string.count("//") > 0 or string.count("**") > 0 or string.count("++") > 0 or string.count("--") > 0):
         return ('Automato não validado')
-    
-    if (string[-1] != ';' ):
-        return ('Automato não validado')
-    
-    string = string.replace(";","")
+
     string = string.replace("+",",")
     string = string.replace("-",",")
     string = string.replace("*",",")
     string = string.replace("/",",")
-    string = string.split(",")
-
-    if ((string)) == ([""]) :
+    
+    if ((string)) == ("") :
         return ('Automato não validado')
+    
+    if (string == ';'):
+        return ('Automato não validado')
+
+    if (string[-1] != ';'):
+        return ('Automato não validado')
+    
+    string = string.replace(";","")
+    
+    string = string.split(",")
     
     for i in range (len(string)): 
         if (identificador(string[i]) == False and numero((string[i])) == False):
@@ -59,9 +66,9 @@ def main(string):
     return ('Automato validado')
 
 
-print(main(' '))
+print(main('a+.2;'))
         
-'asdasd + asdasdas ++ asdsadasd;'
+#'asdasd + asdasdas ++ asdsadasd;'
 # '0a;' , 'a+++sasa;' ';' , ' '
     
 
