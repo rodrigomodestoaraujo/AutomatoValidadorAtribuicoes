@@ -34,25 +34,35 @@ def numero(numero):
 
 def producao(string): 
     
-    if (string.count("//") > 0 or string.count("**") > 0 or string.count("++") > 0 or string.count("--") > 0):
-        return False
-    
-    if (string[-1] != ';'):
-        return False
-    
     string = string.replace(" ", "")
+    
+    if (string.count("//") > 0 or string.count("**") > 0 or string.count("++") > 0 or string.count("--") > 0):
+        return ('Automato não validado')
+    
+    if (string[-1] != ';' ):
+        return ('Automato não validado')
+    
+    string = string.replace(";","")
     string = string.replace("+",",")
     string = string.replace("-",",")
     string = string.replace("*",",")
     string = string.replace("/",",")
     string = string.split(",")
+
+    if ((string)) == ([""]) :
+        return ('Automato não validado')
     
     for i in range (len(string)): 
-        if (identificador(string[i]) != True or numero((string[i])) != True):
-            return False
+        if (identificador(string[i]) == False and numero((string[i])) == False):
+            return ('Automato não validado')
         
     return ('Automato validado')
+
+
+print(producao(' '))
         
+'asdasd + asdasdas ++ asdsadasd;'
+# '0a;' , 'a+++sasa;' ';' , ' '
     
 
     
