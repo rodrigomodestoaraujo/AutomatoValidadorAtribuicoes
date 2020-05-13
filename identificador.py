@@ -2,7 +2,7 @@
 Modelar e implementar um autômato que faça valicação de atribuições, essa atribuição dese ter a seguinte sintaxe:
 
 Sintaxe:  INDENTIFICAR OP_ATRIB ( IDENTIFICADOR | NÚMERO ) ( OP_ATRIB ( IDENTIFICADOR | NÚMERO )  )*  PV
-
+          
 Sendo que:
 
 INDENTIFICAR   = Inicia por uma letra minúscula, seguido por uma quantidade qualquer de letras minúsculas, dígitos
