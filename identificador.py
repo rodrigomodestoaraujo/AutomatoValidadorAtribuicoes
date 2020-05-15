@@ -2,7 +2,7 @@
 Modelar e implementar um autômato que faça valicação de atribuições, essa atribuição dese ter a seguinte sintaxe:
 
 Sintaxe:  INDENTIFICAR OP_ATRIB ( IDENTIFICADOR | NÚMERO ) ( OP_ATRIB ( IDENTIFICADOR | NÚMERO )  )*  PV
-          
+
 Sendo que:
 
 INDENTIFICAR   = Inicia por uma letra minúscula, seguido por uma quantidade qualquer de letras minúsculas, dígitos
@@ -21,7 +21,6 @@ PV             = Representa o caractere   ';'
 
 # IDENTIFICADOR: [a-z] ( [a-z] | [0-9] | [_] )*
 # NÚMERO: ( [0-9]([0-9])* ) | ( [0-9] ([0-9])* '.' [0-9]([0-9])* )
-
 
 def main(string):
     dicionario={}
@@ -119,4 +118,3 @@ def main(string):
 
 while(True):
     main(input(str('\nDigite uma palavra: ')))
-
