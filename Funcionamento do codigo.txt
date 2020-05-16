@@ -1,0 +1,67 @@
+UAM - Universidade Anhembi Morumbi
+
+Engenharia da computação - 9 semestre
+
+Matéria: Linguagens formais e Automatos
+
+Alunos:
+CAIO HENRIQUE MACHADO DE OLIVEIRA	RA: 21311482
+RODRIGO MODESTO DE ARAUJO 		    RA: 20861163
+LUCAS RAFAEL DA SILVA			    RA: 20317368
+VINICIUS MACHADO			        RA: 20646268
+
+
+-------------------------------------------------------------------------------------------------------------------------
+CASO:
+Modelar e implementar um autômato que faça valicação de atribuições, essa atribuição dese ter a seguinte sintaxe:
+
+Sintaxe:  INDENTIFICAR OP_ATRIB ( IDENTIFICADOR | NÚMERO ) ( OP_ATRIB ( IDENTIFICADOR | NÚMERO )  )*  PV
+
+Sendo que:
+
+INDENTIFICAR   = Inicia por uma letra minúscula, seguido por uma quantidade qualquer de letras minúsculas, dígitos
+ou underline.
+
+OP_ATRIB       = Representa o caractere   '='
+
+NUMERO 	       = inicia por um dígito, seguido por uma quantidade qualquer de dígitos, podendo ter opcionalmente
+a parte fracionária. Caso ele tenha a parte fracionária, ele recebe o caractere ‘.’ , seguido de uma sequência
+de um ou mais dígitos.
+
+OP-ARIT         = Representa os caracteres ( '+' | '-' | '*' |'/' )
+
+PV             = Representa o caractere   ';'
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+CÓDIGO:
+
+O código é separado em circo partes e são chamados na função Main(). Cada uma das cinco parte foi convertida em uma função,
+sendo elas:
+
+FUNÇÃO identificador():
+- Valida se o primeira letra é minúscula de acordo com a tabela Ascii.
+- Valida se as só tem letra minúscula, numeros e underline.
+
+FUNÇÃO número():
+- Valida se a sequência de numero não está iniciando ou finalizando com ponto(.)
+- Valida se a sequência de numero não contém mais de um ponto(.)
+
+FUNÇÃO operadorAtributo:
+- Valida se exite apenas um caracter especial, '=', em uma string.
+ 
+FUNÇÃO pv:
+- Valida se exite apenas um caracter, ';', em uma string.
+
+FUNÇÃO operadorAritmetico:
+- Valida a existencia de apenas um dos operadores arintimetico, ['+','-','*','/'], em uma string. 
+
+
+FUNÇÃO Main():
+- É responsavel por fazer a execução do automato, dado uma string que possa a seguinte sintaxe: INDENTIFICAR OP_ATRIB ( IDENTIFICADOR | NÚMERO ) ( OP_ATRIB ( IDENTIFICADOR | NÚMERO )  )*  PV
+
+
+
+
+
