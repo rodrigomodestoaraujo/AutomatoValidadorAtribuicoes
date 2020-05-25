@@ -8,13 +8,13 @@ Sendo que:
 INDENTIFICAR   = Inicia por uma letra minúscula, seguido por uma quantidade qualquer de letras minúsculas, dígitos
 ou underline.
 
-OP_ATRIB       = Representa o caractere   '='
+operadorAtributo       = Representa o caractere   '='
 
 NÚMERO         = inicia por um dígito, seguido por uma quantidade qualquer de dígitos, podendo ter opcionalmente
 a parte fracionária. Caso ele tenha a parte fracionária, ele recebe o caractere ‘.’ , seguido de uma sequência
 de um ou mais dígitos.
 
-OP_ARIT        = Representa os caracteres ( '+' | '-' | '*' |'/' )
+operadorAritmetico        = Representa os caracteres ( '+' | '-' | '*' |'/' )
 
 PV             = Representa o caractere   ';'
 '''
