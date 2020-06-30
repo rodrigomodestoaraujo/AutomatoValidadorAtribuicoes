@@ -5,12 +5,10 @@ Engenharia da computação - 9 semestre
 Matéria: Linguagens formais e Automatos
 
 Alunos:
-CAIO HENRIQUE MACHADO DE OLIVEIRA	RA: 21311482
-RODRIGO MODESTO DE ARAUJO 		    RA: 20861163
-LUCAS RAFAEL DA SILVA			    RA: 20317361
-VINICIUS MACHADO			        RA: 20646268
-
-
+CAIO HENRIQUE MACHADO DE OLIVEIRA	  RA: 21311482
+RODRIGO MODESTO DE ARAUJO 		        RA: 20861163
+LUCAS RAFAEL DA SILVA			            RA: 20317361
+VINICIUS MACHADO			                 RA: 20646268
 -------------------------------------------------------------------------------------------------------------------------
 CASO:
 Modelar e implementar um autômato que faça valicação de atribuições, essa atribuição dese ter a seguinte sintaxe:
@@ -31,9 +29,6 @@ de um ou mais dígitos.
 OP-ARIT         = Representa os caracteres ( '+' | '-' | '*' |'/' )
 
 PV             = Representa o caractere   ';'
-
-
-
 --------------------------------------------------------------------------------------------------------------------------
 CÓDIGO:
 
@@ -60,8 +55,3 @@ FUNÇÃO operadorAritmetico:
 
 FUNÇÃO Main():
 - É responsavel por fazer a execução do automato, dado uma string que possa a seguinte sintaxe: INDENTIFICAR OP_ATRIB ( IDENTIFICADOR | NÚMERO ) ( OP_ATRIB ( IDENTIFICADOR | NÚMERO )  )*  PV
-
-
-
-
-
