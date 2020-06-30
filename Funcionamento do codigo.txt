@@ -6,9 +6,9 @@ Matéria: Linguagens formais e Automatos
 
 Alunos:
 CAIO HENRIQUE MACHADO DE OLIVEIRA	  RA: 21311482
-RODRIGO MODESTO DE ARAUJO 		        RA: 20861163
-LUCAS RAFAEL DA SILVA			            RA: 20317361
-VINICIUS MACHADO			                 RA: 20646268
+RODRIGO MODESTO DE ARAUJO 		  RA: 20861163
+LUCAS RAFAEL DA SILVA			  RA: 20317361
+VINICIUS MACHADO			  RA: 20646268
 -------------------------------------------------------------------------------------------------------------------------
 CASO:
 Modelar e implementar um autômato que faça valicação de atribuições, essa atribuição dese ter a seguinte sintaxe:
