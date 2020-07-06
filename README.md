@@ -16,8 +16,8 @@ a parte fracionária. Caso ele tenha a parte fracionária, ele recebe o caracter
 de um ou mais dígitos.
 
 OP-ARIT         = Representa os caracteres ( '+' | '-' | '*' |'/' )
-
 PV             = Representa o caractere   ';'
+
 --------------------------------------------------------------------------------------------------------------------------
 CÓDIGO:
 
